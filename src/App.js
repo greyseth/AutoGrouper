@@ -1,24 +1,76 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+
+import "./styles/index.css";
+import "./styles/header.css";
+
+import profileIcon from "./img/guest.png";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Main />
+    </>
+  );
+}
+
+function Header() {
+  return (
+    <header>
+      <img src={profileIcon} alt="Profile icon"></img>
+    </header>
+  );
+}
+
+function Main() {
+  return (
+    <main>
+      <SideMenu />
+      <Groups />
+    </main>
+  );
+}
+
+function SideMenu() {
+  return (
+    <aside>
+      <div>
+        <button>+</button>
+        <button>A</button>
+      </div>
+      <ul className="member-list">
+        <li>
+          <button>-</button>
+          <p>New member 1</p>
+          <button>R</button>
+        </li>
+        <li>
+          <button>-</button>
+          <p>New member 1</p>
+          <button>R</button>
+        </li>
+      </ul>
+    </aside>
+  );
+}
+
+function Groups() {
+  return (
+    <section className="group-display">
+      <div>
+        <div className="group-controls">
+          <input type="text" placeholder="Group name"></input>
+          <input type="number" value="0"></input>
+        </div>
+        <ul>
+          <li>
+            <button>-</button>
+            <p>New member 1</p>
+            <button>R</button>
+          </li>
+        </ul>
+      </div>
+    </section>
   );
 }
 

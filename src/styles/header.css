@@ -1,0 +1,19 @@
+header {
+  width: 100vw;
+  height: 50px;
+  background-color: #9ae17b;
+  border-bottom: 1px gold solid;
+  position: sticky;
+  top: 0px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+header img {
+  height: 50px;
+  width: 50px;
+}
+
+/* I was gonna make separate css files for each section, but then I thought maybe
+that would make things hareder for me... */
