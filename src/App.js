@@ -56,19 +56,27 @@ function SideMenu() {
 
 function Groups() {
   return (
-    <section className="group-display">
-      <div>
-        <div className="group-controls">
-          <input type="text" placeholder="Group name"></input>
-          <input type="number" value="0"></input>
+    <section>
+      <div className="group-display-controls">
+        <button>ADD GROUP</button>
+        <button>RESET MEMBERS</button>
+        <button>REMOVE GROUPS</button>
+      </div>
+      <div className="group-display">
+        <div className="group">
+          <div className="group-controls">
+            <button>X</button>
+            <input type="text" placeholder="Group name"></input>
+            <input type="number" placeholder="Max."></input>
+          </div>
+          <ul>
+            <li>
+              <button>-</button>
+              <p>New member 1</p>
+              <button>R</button>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li>
-            <button>-</button>
-            <p>New member 1</p>
-            <button>R</button>
-          </li>
-        </ul>
       </div>
     </section>
   );

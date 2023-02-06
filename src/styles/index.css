@@ -87,19 +87,67 @@ aside div {
   grid-template-columns: 1fr 1fr;
 }
 
-.group-display div {
+.group-display-controls {
+  width: 1fr;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.group-display-controls button {
+  padding: 10px 15px;
+  background-color: #9ae17b;
+}
+
+.group {
   width: 80%;
   height: 250px;
   background-color: #9ae17b;
   margin: 0px auto;
+  border: 1px gold solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
 .group-controls {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  margin-bottom: 10px;
+}
+
+.group-controls button {
+  padding: 10px;
+  background-color: #6bba62;
 }
 
 .group-controls input {
-  width: 50px;
-  height: 15px;
+  width: 100px;
+  height: 30px;
+}
+
+.group ul {
+  list-style: none;
+  width: 80%;
+  height: 80%;
+  background-color: #78966c;
+  overflow-y: scroll;
+  padding: 5px;
+}
+
+.group ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #9ae17b;
+  margin-bottom: 5px;
+}
+
+.group ul li button {
+  padding: 10px;
 }
