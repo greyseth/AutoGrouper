@@ -85,6 +85,7 @@ aside div {
 .group-display {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  overflow-y: scroll;
 }
 
 .group-display-controls {
@@ -111,6 +112,7 @@ aside div {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .group-controls {
@@ -150,4 +152,5 @@ aside div {
 
 .group ul li button {
   padding: 10px;
+  background-color: #a8c49d;
 }
